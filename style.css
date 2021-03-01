@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+html {
+	background-color: hsl(27,72%,72%,0.3);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	color: rgb(91,91,91);
+	background-color: ivory;
+	font-size: 1em;
+	background-image: url('background1.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+article {
+	margin-top: 20px;
+}
+
+article.homeArticle {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100px auto auto auto;
+}
+
+
+
+h1 {
+	color: black;
+	font-family: fantasy;
+	font-size: 2em;
+	text-align: center;
+}
+
+nav ul{
+	line-height: 2em;
+	list-style-type: none;
+	padding-left: 8px;
+	display: flex;
+	flex-flow: row nowrap;
+	text-align: center;
+}
+
+nav ul li {
+	flex: 1 1 auto;
+}
+
+nav ul li#initialize_selected {
+	color: white;
+	background-color:aqua;
+}
+
+body > header > nav > ul > li > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+}
+
+body > header > nav > ul > li > a:visited {
+	color: black;
+}
+
+body > header > nav > ul > li > a:hover {
+	color: white;
+	background-color: #cbe56d;
+}
+
+body > header > nav > ul > li > a:active {
+	color: white;
+	background-color:lightblue;
+}
+
+p {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+aside {
+	color:lightskyblue;
+	float: left;
+}
+
+blockquote {
+	font-size: 1em;
+	width: 50%;
+	font-family: "Lucida Grande", Verdana, sans-serif;
+	margin: 100px 20px auto 15px;
+	border-radius: 15px;
+	background: #ffffff;
+	padding:55px;
+	float: left; 
+} 
+
+
+#contactDetails {
+	text-align: center;
+}
+
+
+footer {
+	color: black;
+	background-color: lightskyblue;
+	font: normal small-caps bold 0.9em/3em Quicksand, Verdana, Genneva, sans-serif;
+	text-align: center;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	clear: both;
+}
+
+
+article#contactDetails ul {
+	list-style-type: none;
+}
+article#contactDetails ul li:first-of-type {
+	list-style-image: url(houseIcon.png);
+}  
+article#contactDetails ul li:nth-of-type(2) {
+	list-style-image: url(phoneIcon.png);
+}
+article#contactDetails ul li:nth-of-type(3) {
+	list-style-image: url(emailIcon.jpg);
+}
+article#contactDetails ul li:last-of-type {
+	list-style-image: url(emailIcon.jpg);
+} 
+
+
+section {
+	width: 100%;
+	padding: 10px;
+	background: #ffffff;
+	border-radius: 20px;
+	box-shadow: 0 0 20px #999;
+	margin-bottom: 20px;
+}
+
+section>h2 {
+	background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+	width:100%;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 3em;
+	/* margin: 50px; */
+	
+}
+
+.photos {
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+}
+
+.image-container {
+	padding: 10px;
+	border-radius: 20px;
+}
+
+blockquote {
+	display: flex; 
+	flex-direction: column;
+}
+
+@media only screen and (max-width: 640px) {
+
+	aside {
+		display: none;
+	}
+ }
